@@ -143,5 +143,4 @@ mvn javafx:run
 
 ## License
 
-Provided as-is for internal/organisational use. Adapt the license section to
-your needs before distributing.
+see /LICENSE 
