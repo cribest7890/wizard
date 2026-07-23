@@ -143,5 +143,5 @@ mvn javafx:run
 
 ## License
 
-[see license](LICENSE)
+See [license](LICENSE)
 
