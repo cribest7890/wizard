@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Application Wizard
+Comment=Linux desktop installer wizard for third-party applications
+Exec=AppRun
+Icon=wizard-app
+Terminal=false
+Categories=Utility;System;

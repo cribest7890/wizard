@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# AppRun entry point executed by the AppImage runtime.
+# APPDIR/APPIMAGE are exported by the AppImage runtime itself; do not override them.
+set -e
+
+HERE="$(dirname "$(readlink -f "${0}")")"
+export APPDIR="${APPDIR:-$HERE}"
+
+JAVA_BIN="$APPDIR/usr/jre/bin/java"
+APP_JAR="$APPDIR/usr/bin/wizard-app.jar"
+
+if [ ! -x "$JAVA_BIN" ]; then
+    echo "Bundled Java runtime not found at $JAVA_BIN" >&2
+    exit 1
+fi
+
+exec "$JAVA_BIN" \
+    -Dprism.order=sw,es2,d3d \
+    -Dfile.encoding=UTF-8 \
+    -jar "$APP_JAR" "$@"

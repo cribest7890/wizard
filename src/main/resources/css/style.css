@@ -1,0 +1,117 @@
+/* Application Wizard - modern flat theme */
+
+.root {
+    -fx-font-family: "Segoe UI", "Noto Sans", "Cantarell", sans-serif;
+    -fx-font-size: 13px;
+    -fx-background-color: #f4f6f9;
+    -accent-color: #3a6df0;
+    -danger-color: #e0483e;
+    -success-color: #2fa86a;
+}
+
+.wizard-header {
+    -fx-background-color: linear-gradient(to right, #2b4ed1, #3a6df0);
+    -fx-padding: 22 28 22 28;
+}
+
+.wizard-title {
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.wizard-subtitle {
+    -fx-text-fill: rgba(255,255,255,0.85);
+    -fx-font-size: 12px;
+}
+
+.wizard-body {
+    -fx-padding: 24;
+    -fx-background-color: #ffffff;
+}
+
+.wizard-footer {
+    -fx-padding: 16 24 16 24;
+    -fx-background-color: #eef1f6;
+    -fx-border-color: #dde2ea transparent transparent transparent;
+    -fx-border-width: 1 0 0 0;
+}
+
+.section-title {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1e2a44;
+}
+
+.hint-text {
+    -fx-text-fill: #6b7280;
+    -fx-font-size: 12px;
+}
+
+.button-primary {
+    -fx-background-color: -accent-color;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 8 20 8 20;
+    -fx-background-radius: 6;
+    -fx-cursor: hand;
+}
+
+.button-primary:hover {
+    -fx-background-color: #2b4ed1;
+}
+
+.button-secondary {
+    -fx-background-color: transparent;
+    -fx-border-color: #c3c9d4;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-padding: 8 20 8 20;
+    -fx-cursor: hand;
+}
+
+.button-danger {
+    -fx-background-color: transparent;
+    -fx-text-fill: -danger-color;
+    -fx-padding: 8 20 8 20;
+    -fx-cursor: hand;
+}
+
+.drop-zone {
+    -fx-border-color: #c3c9d4;
+    -fx-border-style: dashed;
+    -fx-border-width: 2;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-background-color: #f9fafc;
+    -fx-alignment: center;
+    -fx-padding: 30;
+}
+
+.drop-zone-active {
+    -fx-border-color: -accent-color;
+    -fx-background-color: #eaf0ff;
+}
+
+.log-area {
+    -fx-control-inner-background: #10151f;
+    -fx-text-fill: #d8e0f0;
+    -fx-font-family: "Consolas", "Monospace", monospace;
+    -fx-font-size: 11.5px;
+}
+
+.step-indicator {
+    -fx-text-fill: rgba(255,255,255,0.9);
+    -fx-font-size: 11px;
+}
+
+.progress-bar > .bar {
+    -fx-background-color: -accent-color;
+    -fx-background-insets: 0;
+    -fx-background-radius: 4;
+}
+
+.progress-bar > .track {
+    -fx-background-color: #e1e5ec;
+    -fx-background-radius: 4;
+}
