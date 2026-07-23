@@ -5,8 +5,7 @@ self-contained **AppImage** (bundling Eclipse Temurin JRE 21, so end users do
 **not** need Java installed) or as a plain executable JAR.
 
 This project is a full GUI re-implementation of an original bash installer
-script, generalised to work across the Linux/freedesktop ecosystem instead of
-assuming Arch Linux specifically.
+script, generalised to work across the Linux/freedesktop ecosystem.
 
 > **Linux only.** This application intentionally does not support Windows or macOS.
 
